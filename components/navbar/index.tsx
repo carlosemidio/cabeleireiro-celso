@@ -22,7 +22,7 @@ const Navbar: React.FC = () => {
 
   return (
     <div className="relative z-20">
-      <AppBar position="static" className="bg-white">
+      <AppBar position="static" style={{ backgroundColor: '#FFFFFF' }}>
         <div className="container mx-auto lg:px-32">
           <Toolbar className="flex items-center justify-between">
             <div className="flex items-center">

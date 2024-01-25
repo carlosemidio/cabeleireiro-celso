@@ -34,7 +34,7 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className="relative z-1 hidden sm:flex justify-center bg-orange-600 h-[600px]">
+        <div className="relative z-1 hidden sm:flex justify-center h-[600px]">
           <Image
             src="https://lh3.googleusercontent.com/p/AF1QipPvtnQ5XgvBE4DAUCAYYJCb4aAa1nFkVOjHRNXh=w768-h768-n-o-v1"
             alt="Cabeleireiro Celso"

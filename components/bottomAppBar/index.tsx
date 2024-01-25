@@ -10,7 +10,6 @@ import Fab from "@mui/material/Fab";
 
 //modal
 import Box from "@mui/material/Box";
-import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 import WhatsAppButton from "../WhatsappButton";
@@ -46,7 +45,8 @@ export default function BottomAppBar() {
     <React.Fragment>
       <AppBar
         position="fixed"
-        className="bg-white sm:hidden"
+        className="sm:hidden"
+        style={{ backgroundColor: "#FFFFFF" }}
         sx={{ top: "auto", bottom: 0 }}
       >
         <Toolbar>
