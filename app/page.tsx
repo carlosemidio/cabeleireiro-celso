@@ -9,7 +9,7 @@ export default function Home() {
   const title = "Cabeleireiro Celso - Cortes Masculinos";
   const description =
     "Cabeleireiro Celso - Cortes Masculinos";
-  const image = "https://lh3.googleusercontent.com/p/AF1QipPvtnQ5XgvBE4DAUCAYYJCb4aAa1nFkVOjHRNXh=w768-h768-n-o-v1";
+  const image = "/images/cabeleireiro-celso-share.jpeg";
   const url = "https://cabeleireirocelso.com.br";
 
   return (
