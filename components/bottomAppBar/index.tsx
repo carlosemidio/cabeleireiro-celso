@@ -57,8 +57,11 @@ export default function BottomAppBar() {
               </li>
               <li>
                 <Link
-                  href={"#"}
-                  className="flex items-center gap-1 no-underline text-blue-800"
+                  href={
+                    "https://www.google.com/maps/dir//Cabeleireiro+Celso+Masculino/data=!4m8!4m7!1m0!1m5!1m1!1s0x94cef7b26b67876d:0x1e3ce37fc83c7af6!2m2!1d-46.6356381!2d-23.4826457"
+                  }
+                  className="flex items-center gap-1 no-underline"
+                  target="blank"
                 >
                   <DirectionsIcon></DirectionsIcon>
                   Ver Rotas
