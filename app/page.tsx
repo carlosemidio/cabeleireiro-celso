@@ -72,7 +72,7 @@ export default function Home() {
           </div>
           <div className="mx-auto w-full">
             <Image
-              src="/images/galeria/cabeleireiro-celso-1.jpeg"
+              src="/images/cabeleireiro-celso-1.jpeg"
               width={300}
               height={300}
               alt="Cabeleireiro Celso"
@@ -81,7 +81,7 @@ export default function Home() {
           </div>
           <div className="mx-auto w-full">
             <Image
-              src="/images/galeria/cabeleireiro-celso-2.jpeg"
+              src="/images/cabeleireiro-celso-2.jpeg"
               width={300}
               height={300}
               alt="Cabeleireiro Celso"
@@ -90,7 +90,7 @@ export default function Home() {
           </div>
           <div className="mx-auto w-full">
             <Image
-              src="/images/galeria/cabeleireiro-celso-3.jpeg"
+              src="/images/cabeleireiro-celso-3.jpeg"
               width={300}
               height={300}
               alt="Cabeleireiro Celso"
@@ -99,7 +99,7 @@ export default function Home() {
           </div>
           <div className="mx-auto w-full">
             <Image
-              src="/images/galeria/cabeleireiro-celso-5.jpeg"
+              src="/images/cabeleireiro-celso-5.jpeg"
               width={300}
               height={300}
               alt="Cabeleireiro Celso"
@@ -107,7 +107,7 @@ export default function Home() {
             />
 
             <Image
-              src="/images/galeria/cabeleireiro-celso-4.jpeg"
+              src="/images/cabeleireiro-celso-4.jpeg"
               width={300}
               height={300}
               style={{ marginTop: "1rem" }}
