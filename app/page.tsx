@@ -3,10 +3,38 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 import CameraAltIcon from "@mui/icons-material/CameraAlt";
 import ContentCutIcon from "@mui/icons-material/ContentCut";
 import Link from "next/link";
+import Head from "next/head";
 
 export default function Home() {
+  const title = "Cabeleireiro Celso - Cortes Masculinos";
+  const description =
+    "Cabeleireiro Celso - Cortes Masculinos";
+  const image = "https://lh3.googleusercontent.com/p/AF1QipPvtnQ5XgvBE4DAUCAYYJCb4aAa1nFkVOjHRNXh=w768-h768-n-o-v1";
+  const url = "https://cabeleireirocelso.com.br";
+
   return (
     <div className="flex flex-col justify-center gap-24 relative z-0">
+      <Head>
+        <title>Cabeleireiro Celso - Cortes Masculinos</title>
+        <meta
+          name="description"
+          content="Cabeleireiro Celso - Cortes Masculinos"
+        />
+        {/* Open Graph meta tags for Facebook and other social platforms */}
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+        <meta property="og:image" content={image} />
+        <meta property="og:url" content={url} />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter Card meta tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={description} />
+        <meta name="twitter:image" content={image} />
+        <meta name="twitter:url" content={url} />
+        
+      </Head>
       <div className="flex flex-col gap-4">
         <div className=" flex sm:hidden justify-center mb-4">
           <Image
