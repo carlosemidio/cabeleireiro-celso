@@ -192,13 +192,13 @@ export default function Home() {
             Horário de funcionamento
           </h2>
           <div>
-            <p>Seg - Fechado</p>
+            <p>Domingo e segunda - Fechado</p>
           </div>
           <div>
-            <p>Ter, Qua, Qui, Sex, Sáb - 08:45 - 16:00</p>
+            <p>Terça à sexta - 08:45h às 18:00h</p>
           </div>
           <div>
-            <p>Dom - Fechado</p>
+            <p>Sábado - 08:45h às 16:00h </p>
           </div>
         </div>
       </div>
