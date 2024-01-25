@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { Button } from "@mui/material";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import CameraAltIcon from "@mui/icons-material/CameraAlt";
 import ContentCutIcon from "@mui/icons-material/ContentCut";
@@ -120,13 +119,13 @@ export default function Home() {
             Horário de funcionamento
           </h2>
           <div>
-            <p>Seg, Ter, Qua - Fechado</p>
+            <p>Seg - Fechado</p>
           </div>
           <div>
-            <p>Qui, Sex, Sáb - 08:45 - 16:00</p>
+            <p>Ter, Qua, Qui, Sex, Sáb - 08:45 - 16:00</p>
           </div>
           <div>
-            <p>Doming - Fechado</p>
+            <p>Dom - Fechado</p>
           </div>
         </div>
       </div>

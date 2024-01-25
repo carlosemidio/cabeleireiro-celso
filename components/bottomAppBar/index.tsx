@@ -5,7 +5,6 @@ import { styled } from "@mui/material/styles";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import Link from "@mui/material/Link";
-import EmailIcon from "@mui/icons-material/Email";
 import DirectionsIcon from "@mui/icons-material/Directions";
 import Fab from "@mui/material/Fab";
 
@@ -14,7 +13,7 @@ import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
-import { Email } from "@mui/icons-material";
+import WhatsAppButton from "../WhatsappButton";
 
 const style = {
   position: "absolute" as "absolute",
@@ -52,12 +51,9 @@ export default function BottomAppBar() {
       >
         <Toolbar>
           <div className="mx-auto">
-            <ul className="flex items-center gap-4  text-xl">
-              <li className="text-blue-800 flex gap-1 items-center hidden">
-                <EmailIcon></EmailIcon>
-                <div onClick={handleOpen} className=" text-xl text-blue-800">
-                  Entre em Contato
-                </div>
+            <ul className="flex items-center gap-1 text-xl">
+              <li className="text-blue-800 flex gap-1 items-center">
+                <WhatsAppButton phoneNumber="5511961606160" buttonText="Contato" />
               </li>
               <li>
                 <Link
