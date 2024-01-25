@@ -1,12 +1,15 @@
 import Image from "next/image";
 import { Button } from "@mui/material";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
+import CameraAltIcon from "@mui/icons-material/CameraAlt";
+import ContentCutIcon from "@mui/icons-material/ContentCut";
 import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="flex flex-col justify-center relative z-0">
-      <div className="flex flex-col gap-8">
-        <div className=" flex sm:hidden justify-center">
+    <div className="flex flex-col justify-center gap-24 relative z-0">
+      <div className="flex flex-col gap-4">
+        <div className=" flex sm:hidden justify-center mb-4">
           <Image
             src="https://lh3.googleusercontent.com/p/AF1QipPvtnQ5XgvBE4DAUCAYYJCb4aAa1nFkVOjHRNXh=w768-h768-n-o-v1"
             alt="Cabeleireiro Celso"
@@ -15,70 +18,67 @@ export default function Home() {
             className="max-w-100"
           />
         </div>
-        <div className="flex flex-col gap-6 sm:mt-24 sm:mb-12">
-          <div className="text-center">
-            <h1 className="text-4xl text-blue-800 sm:text-6xl">
+        <div className="relative flex flex-col gap-4 sm:mt-24 sm:mb-12">
+          <div className="text-center relative">
+            <ContentCutIcon className="absolute text-slate-200/50 w-72 h-72 z-0 -rotate-[30deg] -translate-y-10 -translate-x-64 sm:-translate-x-96"></ContentCutIcon>
+            <h1 className="relative z-1 text-4xl text-blue-800 sm:text-6xl">
               Celso Cabeleireiro
             </h1>
-            <h2 className="text-blue-800 text-3xl sm:text-4xl">
+            <h2 className="relative z-1 text-blue-800 text-3xl sm:text-4xl">
               Cortes Masculinos
             </h2>
           </div>
-          <div className="text-center text-slate-600 text-lg sm:text-xl">
+          <div className="relative z-1 text-center text-slate-600 text-lg sm:text-xl">
             <p className="">
               Cabeleireiro em{" "}
               <span className="font-semibold">Parque Mandaqui</span>
             </p>
           </div>
         </div>
-        <div className="hidden sm:flex justify-center w-100 h-[600px]">
+        <div className="relative z-1 hidden sm:flex justify-center bg-orange-600 h-[600px]">
           <Image
             src="https://lh3.googleusercontent.com/p/AF1QipPvtnQ5XgvBE4DAUCAYYJCb4aAa1nFkVOjHRNXh=w768-h768-n-o-v1"
             alt="Cabeleireiro Celso"
             width={1100}
             height={300}
-            className="max-w-100 object-cover"
-          />
-        </div>
-
-        <div className="text-center my-8 ">
-          <Button className="hidden bg-blue-800 text-white text-xl hover:bg-blue-900">
-            Entrar em Contato
-          </Button>
-        </div>
-      </div>
-      <div className="text-center mt-8">
-        <h2 className="text-3xl text-blue-800 border-t-2 border-blue-800 inline-block p-2">
-          Galeria
-        </h2>
-      </div>
-      <div className="max-w-6xl mx-auto p-4 mt-4 grid grid-cols- gap-4 sm:grid-cols-2">
-        <div className="mx-auto w-full">
-          <Image
-            src="https://lh3.googleusercontent.com/p/AF1QipPvtnQ5XgvBE4DAUCAYYJCb4aAa1nFkVOjHRNXh=w768-h768-n-o-v1"
-            width={300}
-            height={300}
-            alt="Cabeleireiro Celso"
-            layout="responsive"
-          />
-        </div>
-        <div className="mx-auto w-full">
-          <Image
-            src="https://lh3.googleusercontent.com/p/AF1QipNgaRQB1jCmBjCr85zLCj2RV7VcFUKwPETKl7h3=w960-h960-n-o-v1"
-            width={300}
-            height={300}
-            alt="Cabeleireiro Celso"
+            className="object-cover"
             layout="responsive"
           />
         </div>
       </div>
-      <div className="mx-auto">
-        <div className="text-center my-8">
-          <h2 className="text-3xl text-blue-800 border-t-2 border-blue-800 inline-block p-2">
-            Onde Estamos
-          </h2>
+      <div className="flex flex-col gap-8">
+        <div className="flex items-center gap-2 justify-center">
+          <CameraAltIcon className="text-blue-800 text-4xl"></CameraAltIcon>
+          <h2 className="text-4xl text-blue-800">Galeria</h2>
         </div>
-        <div className="mx-auto w-full">
+        <div className=" max-w-full grid grid-cols-1 gap-4 px-2 sm:px-0 sm:grid-cols-2">
+          <div className="mx-auto w-full">
+            <Image
+              src="https://lh3.googleusercontent.com/p/AF1QipPvtnQ5XgvBE4DAUCAYYJCb4aAa1nFkVOjHRNXh=w768-h768-n-o-v1"
+              width={300}
+              height={300}
+              alt="Cabeleireiro Celso"
+              layout="responsive"
+              className="object-cover"
+            />
+          </div>
+          <div className="mx-auto w-full">
+            <Image
+              src="https://lh3.googleusercontent.com/p/AF1QipNgaRQB1jCmBjCr85zLCj2RV7VcFUKwPETKl7h3=w960-h960-n-o-v1"
+              width={300}
+              height={300}
+              alt="Cabeleireiro Celso"
+              layout="responsive"
+            />
+          </div>
+        </div>
+      </div>
+      <div className="flex flex-col gap-4">
+        <div className="flex items-center justify-center">
+          <LocationOnIcon className="text-blue-800 text-4xl"></LocationOnIcon>
+          <h2 className="text-4xl text-blue-800 p-2">Onde Estamos</h2>
+        </div>
+        <div className="w-full">
           <Link
             target="blank"
             href="https://www.google.com/maps/place/Cabeleireiro+Celso+Masculino/data=!3m1!4b1!4m2!3m1!1s0x94cef7b26b67876d:0x1e3ce37fc83c7af6"
@@ -88,6 +88,7 @@ export default function Home() {
               width={1000}
               height={300}
               alt="Mapa do Estabelecimento"
+              layout="responsive"
             ></Image>
           </Link>
         </div>

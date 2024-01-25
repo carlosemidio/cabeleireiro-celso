@@ -27,7 +27,7 @@ export default function RootLayout({
     <html lang="pt-br">
       <body className={libreBaskerville.className}>
         <Navbar></Navbar>
-        <div className="container mx-auto">{children}</div>
+        <div className="container mx-auto lg:px-32">{children}</div>
         <BottomAppBar></BottomAppBar>
       </body>
     </html>
