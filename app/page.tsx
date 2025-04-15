@@ -195,10 +195,10 @@ export default function Home() {
             <p>Domingo e segunda - Fechado</p>
           </div>
           <div>
-            <p>Terça à sexta - 08:45h às 18:00h</p>
+            <p>Terça à sexta - 09:00h às 17:30h</p>
           </div>
           <div>
-            <p>Sábado - 08:45h às 16:00h </p>
+            <p>Sábado - 09:00h às 15:00h </p>
           </div>
         </div>
       </div>
